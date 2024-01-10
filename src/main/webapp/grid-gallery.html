@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 그리드 레이아웃으로 만드는 갤러리</title>
+<style>
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem	
+}
+.item {
+	border: 1px solid gray;
+	padding: 1rem
+}
+.item img {
+	width: 100%;
+}
+
+</style>
+</head>
+<body>
+	<div class="container"><!--  #wrapper -->
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/1/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/2/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/3/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/4/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/5/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/6/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/7/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+		<div class="item"><!-- .card -->
+			<h2>사진 제목</h2>
+			<img src="https://picsum.photos/id/8/150/100" alt="placeholder">
+			<p>사진설명 : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure minus.</p>
+		</div>
+	</div>
+</body>
+</html>
