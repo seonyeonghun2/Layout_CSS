@@ -6,14 +6,22 @@
 <style>
 .container {
 	width: 500px;
+	height: 500px; /* 컨테이너 세로폭을 크게 */
 	border: 1px dashed darkred;
-	display: inline-flex;
-	flex-direction: row /* flex 적용시 기본값 row가 적용됨 */
+	display: flex;
+	flex-direction: row; /* flex 적용시 기본값 row가 적용됨 */	
+	justify-content: center
 }
 .item {
+	width: 50px;
+	height: 50px;
 	border: 1px solid #333;
 	padding: 1rem;  /* 1rem = 16px */
 	margin: .5rem   /* .5rem = 8px */
+	
+}
+.item2 {
+	align-self: flex-end
 }
 </style>
 </head>
@@ -31,16 +39,11 @@
 		<li>교차축 : 주축과 교차하는 방향을 말하고, 기본적으로 위에서 아래로 배치합니다.</li>
 	</ul>
 	
-	<h2>플렉스 박스 실습</h2>
+	<h2>플렉스 박스 실습(p.414)</h2>
 	<div class="container">
 		<div class="item item1">1</div>
 		<div class="item item2">2</div>
 		<div class="item item3">3</div>
-	</div>
-	<div class="container">
-		<div class="item item1">1</div>
-		<div class="item item2">2</div>
-		<div class="item item3">3</div>
-	</div>
+	</div>	
 </body>
 </html>
